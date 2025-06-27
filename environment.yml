@@ -1,0 +1,22 @@
+name: msc_geonlp_env
+channels:
+  - conda-forge
+  - defaults
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+  - https://repo.anaconda.com/pkgs/msys2
+dependencies:
+  - python=3.10
+  - jupyter
+  - matplotlib
+  - nltk
+  - numpy
+  - pandas
+  - requests
+  - sqlalchemy
+  - conda-forge::python-annoy
+  - conda-forge::spacy
+  - conda-forge::python-dotenv
+  - psycopg2
+  - conda-forge::pyvis
+prefix: C:\Users\Drew\anaconda3\envs\msc_geonlp_env
