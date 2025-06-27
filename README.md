@@ -64,51 +64,65 @@ project/
 
 ---
 
-## 📊 Visualizing the Results
+Thanks — that's a great distinction, and it's worth reflecting in the tone and purpose of your README.
 
-After importing the data, use the web app to explore semantic relationships:
-
-1. Run the FastAPI server:
-
-   ```bash
-   uvicorn main:app --reload
-   ```
-
-2. Open in browser:
-   [http://localhost:8000](http://localhost:8000)
-
-3. Search for a geoscience term like `"volcanic arc"`.
-
-4. Use the interactive tools to:
-
-   * Filter edges by co-occurrence probability
-   * Highlight nodes by category
-   * Export visualizations or download the underlying data
+Here's a **refined replacement section** for your `README.md`:
 
 ---
 
-## 💻 Installation
+## 🌐 Explore the Results Online
+
+After processing and importing the data, you can explore the semantic relationships using the **web-based GeoNLP App** — no coding required.
+
+This app was built to **democratize access** to geoscientific text mining tools, making them available to a broader audience regardless of technical background.
+
+### 🔗 Web App Access
+
+You can explore the interactive co-occurrence networks and mutual information results directly via:
+
+👉 **[GeoNLP App](https://geo-nlp-portal.onrender.com/)**
+
+### 🧭 Key Features:
+
+* Search for geological terms (e.g., `"volcanic arc"`)
+* Visualize semantic networks of related words
+* Filter edges by co-occurrence probability
+* Highlight nodes by type (e.g., mineral, lithology, structure)
+* Download raw statistics for external use
+
+> 🧪 *This web app complements the code in this repository, offering a no-code interface for geoscientists, students, and the public.*
+
+---
+
+## 💻 Installation - (Unneccessary if using the App)
 
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/geonlp-project.git
-cd geonlp-project
+git clone https://github.com/DHeasmanGDS/msc-geonlp-notebooks
+cd msc-geonlp-notebooks
 ```
+
+Great — since you're using a `.yml` file to manage your environment (which is the better approach for reproducibility), here’s the updated version of that section for your `README.md`:
+
+---
 
 ### 2. Set Up the Conda Environment
 
+Create the environment from the included `.yml` file:
+
 ```bash
-conda create -n geonlp_env python=3.11
-conda activate geonlp_env
-pip install -r requirements.txt
+conda env create -f environment.yml
+conda activate msc-geonlp-notebooks
 ```
 
-> Note: You may need to install PostgreSQL and `psycopg2`:
+> 📝 **Note**: If the environment file doesn't install everything perfectly (e.g., issues with `psycopg2`), you can manually install missing packages:
 
 ```bash
 conda install -c conda-forge psycopg2
 ```
+
+---
 
 ### 3. Set Up Your `.env` File
 
@@ -144,8 +158,10 @@ This project is licensed under the MIT License. See `LICENSE` for details.
 ## 👋 Acknowledgments
 
 * Developed as part of my MSc at the University of Saskatchewan.
-* Supervised by \Bruce Eglington]
-* Based on data from the [xDD Project](https://geodeepdive.org/)
+* Supervised by Bruce Eglington
+* Based on data from the [xDD](https://geodeepdive.org/)
+
+* Peters SE, Ross IA, Rekatsinas ML (2023) xDD: a platform for text and data mining from scholarly publications.
 
 ---
 
