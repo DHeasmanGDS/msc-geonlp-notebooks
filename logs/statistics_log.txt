@@ -8750,3 +8750,11 @@
   Unique publishers: 4
   Runtime (s): 0.00
 ---------------------------------------------------
+[2025-07-04 11:21:54] Term: witwatersrand
+  Total snippets: 1311
+  Total documents: 10
+  Total tokens: 10150
+  Unique terms: 1922
+  Unique publishers: 4
+  Runtime (s): 0.00
+---------------------------------------------------
