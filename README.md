@@ -149,9 +149,23 @@ DB_NAME=geonlp
 
 ---
 
-## 📘 License
+## ⚖️ Licensing & Attribution
 
-This project is licensed under the MIT License. See `LICENSE` for details.
+**Code, methods, and documentation in this repository**
+- Licensed under the **MIT License** (see `LICENSE`). You may use, copy, modify, merge, publish, distribute, sublicense, and/or sell the software, subject to the MIT terms.
+
+**xDD data and anything derived directly from xDD content**
+- Licensed under **CC BY-NC 4.0** **by xDD**. This applies to all xDD outputs you obtain via the API or platform (e.g., snippets, metadata records, and any files that reproduce or closely track those outputs such as term-level snippet CSVs, BibJSON built from xDD metadata, example figures based on xDD results, etc.). Commercial use is **not** permitted under CC BY-NC. Cite xDD when you use these materials.  
+  > xDD states: “All xDD output is licensed under CC-BY-NC.” :contentReference[oaicite:0]{index=0}
+
+**Attribution example**
+> Data and text snippets from xDD (University of Wisconsin–Madison), CC BY-NC 4.0.  
+> Peters SE, Ross IA, Rekatsinas ML (2023), “xDD: a platform for text and data mining from scholarly publications.”
+
+**Notes**
+- Some documents indexed by xDD originate from third-party publishers. When redistributing any content, ensure compliance with the **publisher’s** terms in addition to xDD’s license.  
+- This statement is informational and not legal advice.
+
 
 ---
 
