@@ -62,13 +62,6 @@ project/
 * Loads all calculated statistics into a PostgreSQL database.
 * Ensures tables for `term_stats`, `term_pairs`, and `term_cooccurrence` are created and filled.
 
----
-
-Thanks — that's a great distinction, and it's worth reflecting in the tone and purpose of your README.
-
-Here's a **refined replacement section** for your `README.md`:
-
----
 
 ## 🌐 Explore the Results Online
 
