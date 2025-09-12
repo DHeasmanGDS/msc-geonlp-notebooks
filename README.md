@@ -64,12 +64,6 @@ project/
 
 ---
 
-Thanks — that's a great distinction, and it's worth reflecting in the tone and purpose of your README.
-
-Here's a **refined replacement section** for your `README.md`:
-
----
-
 ## 🌐 Explore the Results Online
 
 After processing and importing the data, you can explore the semantic relationships using the **web-based GeoNLP App** — no coding required.
