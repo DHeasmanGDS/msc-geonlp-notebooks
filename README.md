@@ -97,8 +97,6 @@ git clone https://github.com/DHeasmanGDS/msc-geonlp-notebooks
 cd msc-geonlp-notebooks
 ```
 
-Great — since you're using a `.yml` file to manage your environment (which is the better approach for reproducibility), here’s the updated version of that section for your `README.md`:
-
 ---
 
 ### 2. Set Up the Conda Environment
@@ -177,6 +175,5 @@ DB_NAME=geonlp
 
 If you'd like to contribute or have feedback, feel free to:
 
-* Open an issue
 * Submit a pull request
 * Contact me at [dheasman@smcg-services.com](mailto:dheasman@smcg-services.com)
