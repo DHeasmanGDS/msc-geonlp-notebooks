@@ -54,8 +54,20 @@ from logging_utils import write_log_for_term
 # Global Variables
 ################################################################################
 
-# XDD API url endpoint
-API = "https://xdd.wisc.edu/api/v1/snippets"
+# XDD API url endpoint.
+#
+# Use the unversioned path, NOT /api/v1/snippets. As of 2026-08-21 the v1 path
+# returns HTTP 404 with {"error": {"message": "... Error: No Living connections"}}
+# — an Elasticsearch fault behind the service, not a client problem. Because
+# xdd_api_call() only treats status_code == 200 as success, a broken v1 endpoint
+# is indistinguishable from a network error there: every term silently exhausts
+# retry_limit and returns zero documents.
+#
+# The unversioned path is a drop-in. Verified against the params used in
+# notebooks/1p1_xDD Data Extraction.ipynb: same success.data shape, and its
+# next_page cursor points back at /api/snippets, so pagination stays on the
+# working path rather than bouncing to v1 on page 2.
+API = "https://xdd.wisc.edu/api/snippets"
 
 ################################################################################
 # Main Function Call
