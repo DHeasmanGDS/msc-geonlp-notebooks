@@ -88,6 +88,16 @@ You can explore the interactive co-occurrence networks and mutual information re
 
 ---
 
+## 💻 Computational requirements
+
+Commodity x86-64 hardware. **No GPU is required and none is used.** The notebooks are CPU-only Python
+3.10 (see `environment.yml`) and run within about 1 GiB of memory. Runtime is dominated by network
+calls to the xDD Snippet API and by PostgreSQL inserts rather than by local computation: extraction
+for a single common term takes minutes, and the statistics and import notebooks run in minutes
+against a local database.
+
+---
+
 ## 💻 Installation - (Unneccessary if using the App)
 
 ### 1. Clone the Repo
